@@ -1,18 +1,27 @@
 # nvim-base16
 
-Neovim plugin for building base16 colorschemes with support for Neovim's
-builtin LSP and Treesitter.
+Neovim plugin for applying banner colorschemes to highlight groups.
 
 ```lua
 -- All builtin colorschemes can be accessed with |:colorscheme|.
 vim.cmd('colorscheme base16-gruvbox-dark-soft')
+vim.cmd('colorscheme banner-rosepine')
 
 -- Alternatively, you can provide a table specifying your colors to the setup function.
-require('base16-colorscheme').setup({
+local colorscheme = require('colorscheme')
+colorscheme.setup({
     base00 = '#16161D', base01 = '#2c313c', base02 = '#3e4451', base03 = '#6c7891',
     base04 = '#565c64', base05 = '#abb2bf', base06 = '#9a9bb3', base07 = '#c5c8e6',
     base08 = '#e06c75', base09 = '#d19a66', base0A = '#e5c07b', base0B = '#98c379',
     base0C = '#56b6c2', base0D = '#0184bc', base0E = '#c678dd', base0F = '#a06949',
+    urgent =    '#e06c75',
+    warn =      '#e5c07b',
+    confirm =   '#98c379',
+    link =      '#0184bc',
+    highlight = '#c678dd',
+    hialt0 =    '#c678dd',
+    hialt1 =    '#c678dd',
+    hialt2 =    '#c678dd',
 })
 ```
 
