@@ -120,6 +120,10 @@ function M.setup(colors, config)
     end
     vim.cmd('set termguicolors')
 
+    if not colors then
+        colors.test()
+    end
+
     M.colors = colors or M.colorschemes[vim.env.BASE16_THEME] or M.colorschemes['schemer-dark']
     local hi = M.highlight
 
