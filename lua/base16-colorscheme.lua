@@ -123,6 +123,15 @@ function M.setup(colors, config)
     M.colors = colors or M.colorschemes[vim.env.BASE16_THEME] or M.colorschemes['schemer-dark']
     local hi = M.highlight
 
+    print("INPUT COLORS:")
+    for name, color in pairs(colors) do
+        print(name .. ": " .. color)
+    end
+    print("M.COLORS:")
+    for name, color in pairs(M.colors) do
+        print(name .. ": " .. color)
+    end
+
     -- Vim editor colors
     hi.Normal       = { guifg = M.colors.base05, guibg = M.colors.base00, gui = nil, guisp = nil }
     hi.Bold         = { guifg = nil, guibg = nil, gui = 'bold', guisp = nil }
