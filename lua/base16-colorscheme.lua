@@ -401,39 +401,39 @@ function M.setup(colors, config)
     hi.BufferLineText           = { guifg = M.colors.highlight, guibg = nil, gui = 'none', guisp = nil }
     hi.BufferLineBGSel          = { guifg = nil, guibg = M.colors.highlight, gui = 'none', guisp = nil }
     hi.BufferLineBG             = { guifg = nil, guibg = M.colors.base00, gui = 'none', guisp = nil }
-    hi.BufferLineSeparatorSel   = { guifg = M.colors.base03, guibg = nil, gui = 'none', guisp = nil }
-    hi.BufferLineSeparator      = { guifg = M.colors.base03, guibg = nil, gui = 'none', guisp = nil }
+    hi.BufferLineSeparatorSel   = { guifg = M.colors.highlight, guibg = M.colors.base00, gui = 'none', guisp = nil }
+    hi.BufferLineSeparator      = { guifg = M.colors.highlight, guibg = M.colors.base00, gui = 'none', guisp = nil }
     -- lewis6991/gitsigns.nvim
-    hi.GitSignsAdd              = { guifg = M.colors.base03, guibg = nil, gui = 'none', guisp = nil }
-    hi.GitSignsChange           = { guifg = M.colors.base03, guibg = nil, gui = 'none', guisp = nil }
-    hi.GitSignsDelete           = { guifg = M.colors.base03, guibg = nil, gui = 'none', guisp = nil }
-    hi.SignAdd                  = { guifg = M.colors.base03, guibg = nil, gui = 'none', guisp = nil }
-    hi.SignChange               = { guifg = M.colors.base03, guibg = nil, gui = 'none', guisp = nil }
-    hi.SignDelete               = { guifg = M.colors.base03, guibg = nil, gui = 'none', guisp = nil }
+    hi.GitSignsAdd              = { guifg = M.colors.confirm, guibg = nil, gui = 'none', guisp = nil }
+    hi.GitSignsChange           = { guifg = M.colors.warn, guibg = nil, gui = 'none', guisp = nil }
+    hi.GitSignsDelete           = { guifg = M.colors.urgent, guibg = nil, gui = 'none', guisp = nil }
+    hi.SignAdd                  = 'GitSignsAdd'
+    hi.SignChange               = 'GitSignsChange'
+    hi.SignDelete               = 'GitSignsDelete'
     -- kyazdani42/nvim-tree.lua
-    hi.NvimTreeEmptyFolderName  = { guifg = M.colors.base03, guibg = nil, gui = 'none', guisp = nil }
-    hi.NvimTreeFileDeleted      = { guifg = M.colors.base03, guibg = nil, gui = 'none', guisp = nil }
-    hi.NvimTreeFileDirty        = { guifg = M.colors.base03, guibg = nil, gui = 'none', guisp = nil }
-    hi.NvimTreeFileMerge        = { guifg = M.colors.base03, guibg = nil, gui = 'none', guisp = nil }
-    hi.NvimTreeFileNew          = { guifg = M.colors.base03, guibg = nil, gui = 'none', guisp = nil }
-    hi.NvimTreeFileRenamed      = { guifg = M.colors.base03, guibg = nil, gui = 'none', guisp = nil }
-    hi.NvimTreeFileStaged       = { guifg = M.colors.base03, guibg = nil, gui = 'none', guisp = nil }
-    hi.NvimTreeFolderIcon       = { guifg = M.colors.base03, guibg = nil, gui = 'none', guisp = nil }
-    hi.NvimTreeFolderName       = { guifg = M.colors.base03, guibg = nil, gui = 'none', guisp = nil }
-    hi.NvimTreeGitDeleted       = { guifg = M.colors.base03, guibg = nil, gui = 'none', guisp = nil }
-    hi.NvimTreeGitDirty         = { guifg = M.colors.base03, guibg = nil, gui = 'none', guisp = nil }
-    hi.NvimTreeGitIgnored       = { guifg = M.colors.base03, guibg = nil, gui = 'none', guisp = nil }
-    hi.NvimTreeGitMerge         = { guifg = M.colors.base03, guibg = nil, gui = 'none', guisp = nil }
-    hi.NvimTreeGitNew           = { guifg = M.colors.base03, guibg = nil, gui = 'none', guisp = nil }
-    hi.NvimTreeGitRenamed       = { guifg = M.colors.base03, guibg = nil, gui = 'none', guisp = nil }
-    hi.NvimTreeGitStaged        = { guifg = M.colors.base03, guibg = nil, gui = 'none', guisp = nil }
-    hi.NvimTreeImageFile        = { guifg = M.colors.base03, guibg = nil, gui = 'none', guisp = nil }
-    hi.NvimTreeNormal           = { guifg = M.colors.base03, guibg = nil, gui = 'none', guisp = nil }
-    hi.NvimTreeOpenedFile       = { guifg = M.colors.base03, guibg = nil, gui = 'none', guisp = nil }
-    hi.NvimTreeOpenedFolderName = { guifg = M.colors.base03, guibg = nil, gui = 'none', guisp = nil }
-    hi.NvimTreeRootFolder       = { guifg = M.colors.base03, guibg = nil, gui = 'none', guisp = nil }
-    hi.NvimTreeSpecialFile      = { guifg = M.colors.base03, guibg = nil, gui = 'none', guisp = nil }
-    hi.NvimTreeWindowPicker     = { guifg = M.colors.base03, guibg = nil, gui = 'none', guisp = nil }
+    hi.NvimTreeEmptyFolderName  = { guifg = M.colors.base04, guibg = nil, gui = 'none', guisp = nil }
+    hi.NvimTreeFileDeleted      = { guifg = M.colors.urgent, guibg = nil, gui = 'none', guisp = nil }
+    hi.NvimTreeFileDirty        = { guifg = M.colors.warn, guibg = nil, gui = 'none', guisp = nil }
+    hi.NvimTreeFileMerge        = { guifg = M.colors.hialt0, guibg = nil, gui = 'none', guisp = nil }
+    hi.NvimTreeFileNew          = { guifg = M.colors.confirm, guibg = nil, gui = 'none', guisp = nil }
+    hi.NvimTreeFileRenamed      = { guifg = M.colors.warn, guibg = nil, gui = 'none', guisp = nil }
+    hi.NvimTreeFileStaged       = { guifg = M.colors.warn, guibg = nil, gui = 'none', guisp = nil }
+    hi.NvimTreeFolderIcon       = { guifg = M.colors.highlight, guibg = nil, gui = 'none', guisp = nil }
+    hi.NvimTreeFolderName       = { guifg = M.colors.highlight, guibg = nil, gui = 'none', guisp = nil }
+    hi.NvimTreeGitDeleted       = { guifg = M.colors.urgent, guibg = nil, gui = 'none', guisp = nil }
+    hi.NvimTreeGitDirty         = { guifg = M.colors.warn, guibg = nil, gui = 'none', guisp = nil }
+    hi.NvimTreeGitIgnored       = { guifg = M.colors.urgent, guibg = nil, gui = 'none', guisp = nil }
+    hi.NvimTreeGitMerge         = { guifg = M.colors.hialt0, guibg = nil, gui = 'none', guisp = nil }
+    hi.NvimTreeGitNew           = { guifg = M.colors.confirm, guibg = nil, gui = 'none', guisp = nil }
+    hi.NvimTreeGitRenamed       = { guifg = M.colors.warn, guibg = nil, gui = 'none', guisp = nil }
+    hi.NvimTreeGitStaged        = { guifg = M.colors.warn, guibg = nil, gui = 'none', guisp = nil }
+    hi.NvimTreeImageFile        = { guifg = M.colors.hialt1, guibg = nil, gui = 'none', guisp = nil }
+    hi.NvimTreeNormal           = { guifg = M.colors.base05, guibg = nil, gui = 'none', guisp = nil }
+    hi.NvimTreeOpenedFile       = { guifg = M.colors.highlight, guibg = nil, gui = 'bold', guisp = nil }
+    hi.NvimTreeOpenedFolderName = { guifg = M.colors.highlight, guibg = nil, gui = 'bold', guisp = nil }
+    hi.NvimTreeRootFolder       = { guifg = M.colors.highlight, guibg = nil, gui = 'none', guisp = nil }
+    hi.NvimTreeSpecialFile      = { guifg = M.colors.hialt2, guibg = nil, gui = 'none', guisp = nil }
+    hi.NvimTreeWindowPicker     = { guifg = M.colors.highlight, guibg = M.colors.pfg_highlight, gui = 'none', guisp = nil }
 
     -- hrsh7th/nvim-cmp
     hi.CmpItemAbbr           = { guifg = M.colors.base03, guibg = nil, gui = 'none', guisp = nil }
