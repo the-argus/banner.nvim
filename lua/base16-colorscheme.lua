@@ -351,13 +351,38 @@ function M.setup(colors, config)
     hi.NvimTreeGitNew           = { guifg = M.colors.confirm, guibg = nil, gui = 'none', guisp = nil }
     hi.NvimTreeGitRenamed       = { guifg = M.colors.warn, guibg = nil, gui = 'none', guisp = nil }
     hi.NvimTreeGitStaged        = { guifg = M.colors.warn, guibg = nil, gui = 'none', guisp = nil }
-    hi.NvimTreeImageFile        = { guifg = M.colors.hialt1, guibg = nil, gui = 'none', guisp = nil }
     hi.NvimTreeNormal           = { guifg = M.colors.base05, guibg = nil, gui = 'none', guisp = nil }
     hi.NvimTreeOpenedFile       = { guifg = M.colors.highlight, guibg = nil, gui = 'bold', guisp = nil }
     hi.NvimTreeOpenedFolderName = { guifg = M.colors.highlight, guibg = nil, gui = 'bold', guisp = nil }
     hi.NvimTreeRootFolder       = { guifg = M.colors.highlight, guibg = nil, gui = 'none', guisp = nil }
-    hi.NvimTreeSpecialFile      = { guifg = M.colors.hialt2, guibg = nil, gui = 'none', guisp = nil }
     hi.NvimTreeWindowPicker     = { guifg = M.colors.highlight, guibg = M.colors.pfg_highlight, gui = 'none', guisp = nil }
+    -- nvim tree file types
+    hi.NvimTreeSymlink          = { guifg = M.colors.hialt0, guibg = M.colors.pfg_highlight, gui = 'none', guisp = nil }
+    hi.NvimTreeImageFile        = { guifg = M.colors.hialt1, guibg = nil, gui = 'none', guisp = nil }
+    hi.NvimTreeExecFile         = { guifg = M.colors.hialt1, guibg = M.colors.pfg_highlight, gui = 'none', guisp = nil }
+    hi.NvimTreeBookmark         = { guifg = M.colors.hialt2, guibg = M.colors.pfg_highlight, gui = 'bold', guisp = nil }
+    hi.NvimTreeSpecialFile      = { guifg = M.colors.hialt2, guibg = nil, gui = 'none', guisp = nil }
+    -- other highlight groups which I've never seen in use and haven't read the documentation for :/
+    -- ( I think normally they are links to other highlights )
+    -- hi.NvimTreePopup                     = { guifg = nil, guibg = nil, gui = 'none', guisp = nil }
+    -- hi.NvimTreeCursorLine                = { guifg = nil, guibg = nil, gui = 'none', guisp = nil }
+    -- hi.NvimTreeCursorColumn              = { guifg = nil, guibg = nil, gui = 'none', guisp = nil }
+    -- hi.NvimTreeLineNr                    = { guifg = nil, guibg = nil, gui = 'none', guisp = nil }
+    -- hi.NvimTreeIndentMarker              = { guifg = nil, guibg = nil, gui = 'none', guisp = nil }
+    -- hi.NvimTreeNormalNC                  = { guifg = nil, guibg = nil, gui = 'none', guisp = nil }
+    -- hi.NvimTreeVertSplit                 = { guifg = nil, guibg = nil, gui = 'none', guisp = nil }
+    -- hi.NvimTreeVertSplit                 = { guifg = nil, guibg = nil, gui = 'none', guisp = nil }
+    -- hi.NvimTreeSignColumn                = { guifg = nil, guibg = nil, gui = 'none', guisp = nil }
+    -- hi.NvimTreeStatusLine                = { guifg = nil, guibg = nil, gui = 'none', guisp = nil }
+    -- hi.NvimTreeStatusLineNC              = { guifg = nil, guibg = nil, gui = 'none', guisp = nil }
+    hi.NvimTreeWinSeparator     = { guifg = M.colors.base03, guibg = nil, gui = 'none', guisp = nil }
+    -- hi.NvimTreeEndOfBuffer               = { guifg = nil, guibg = nil, gui = 'none', guisp = nil }
+    -- hi.NvimTreeLiveFilterValue           = { guifg = nil, guibg = nil, gui = 'none', guisp = nil }
+    -- hi.NvimTreeLiveFilterPrefix          = { guifg = nil, guibg = nil, gui = 'none', guisp = nil }
+    -- hi.NvimTreeLspDiagnosticsHint        = { guifg = nil, guibg = nil, gui = 'none', guisp = nil }
+    -- hi.NvimTreeLspDiagnosticsError       = { guifg = nil, guibg = nil, gui = 'none', guisp = nil }
+    -- hi.NvimTreeLspDiagnosticsWarning     = { guifg = nil, guibg = nil, gui = 'none', guisp = nil }
+    -- hi.NvimTreeLspDiagnosticsInformation = { guifg = nil, guibg = nil, gui = 'none', guisp = nil }
 
     -- hrsh7th/nvim-cmp
     hi.CmpItemAbbr           = { guifg = M.colors.base03, guibg = nil, gui = 'none', guisp = nil }
