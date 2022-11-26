@@ -321,12 +321,37 @@ function M.setup(colors, config)
     hi.LuaDevicon = { guifg = M.colors.base05, guibg = nil, gui = 'none', guisp = nil }
 
     -- bufferline
-    hi.BufferLineTextSel        = { guifg = M.colors.base05, guibg = nil, gui = 'none', guisp = nil }
-    hi.BufferLineText           = { guifg = M.colors.highlight, guibg = nil, gui = 'none', guisp = nil }
-    hi.BufferLineBGSel          = { guifg = nil, guibg = M.colors.highlight, gui = 'none', guisp = nil }
-    hi.BufferLineBG             = { guifg = nil, guibg = M.colors.base00, gui = 'none', guisp = nil }
-    hi.BufferLineSeparatorSel   = { guifg = M.colors.highlight, guibg = M.colors.base00, gui = 'none', guisp = nil }
-    hi.BufferLineSeparator      = { guifg = M.colors.highlight, guibg = M.colors.base00, gui = 'none', guisp = nil }
+    hi.BufferLineTextSel      = { guifg = M.colors.highlight, guibg = nil, gui = 'none', guisp = nil }
+    hi.BufferLineText         = { guifg = M.colors.highlight, guibg = nil, gui = 'none', guisp = nil }
+    hi.BufferLineBGSel        = { guifg = nil, guibg = M.colors.highlight, gui = 'none', guisp = nil }
+    hi.BufferLineBG           = { guifg = nil, guibg = M.colors.base00, gui = 'none', guisp = nil }
+    hi.BufferLineSeparatorSel = { guifg = M.colors.highlight, guibg = M.colors.base00, gui = 'none', guisp = nil }
+    hi.BufferLineSeparator    = { guifg = M.colors.highlight, guibg = M.colors.base00, gui = 'none', guisp = nil }
+
+    hi.BufferLineFill = 'BufferLineText'
+    hi.BufferLineBackground = 'BufferLineBG'
+    hi.BufferLineSelected = 'BufferLineTextSel'
+    hi.BufferLineVisible = 'BufferLineText'
+    hi.BufferLineBuffer = 'BufferLineText'
+    hi.BufferLineCloseButton = 'BufferLineText'
+    hi.BufferLineCloseButtonVisible = 'BufferLineTextSel'
+
+    -- need to add
+    --
+    -- BufferLineTabSelected
+    -- BufferLineTab
+    -- BufferLineTabClose
+    -- BufferLineDuplicateSelected
+    -- BufferLineDuplicateVisisble
+    -- BufferLineDuplicate
+    -- BufferLineModified
+    -- BufferLineModifiedSelected
+    -- BufferLineModifiedVisible
+    -- BufferLineSeparator
+    -- BufferLineSeparatorSelected
+    -- BufferLineSeparatorVisible
+    -- BufferLineIndicatorSelected
+
     -- lewis6991/gitsigns.nvim
     hi.GitSignsAdd              = { guifg = M.colors.confirm, guibg = nil, gui = 'none', guisp = nil }
     hi.GitSignsChange           = { guifg = M.colors.warn, guibg = nil, gui = 'none', guisp = nil }
